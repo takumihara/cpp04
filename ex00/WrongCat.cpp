@@ -3,11 +3,9 @@
 
 WrongCat::WrongCat() {
 	type_ = "WrongCat";
-	std::cout << "WrongCat constructor called!" << std::endl;
 }
 
 WrongCat::~WrongCat() {
-	std::cout << "WrongCat destructor called!" << std::endl;
 }
 
 WrongCat::WrongCat(WrongCat const &rhs) {

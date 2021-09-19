@@ -3,11 +3,9 @@
 
 WrongAnimal::WrongAnimal() {
 	type_ = "WrongAnimal";
-	std::cout << "WrongAnimal constructor called!" << std::endl;
 }
 
 WrongAnimal::~WrongAnimal() {
-	std::cout << "WrongAnimal destructor called!" << std::endl;
 }
 
 WrongAnimal::WrongAnimal(WrongAnimal const &rhs) {

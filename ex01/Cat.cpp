@@ -3,9 +3,13 @@
 
 Cat::Cat() {
 	type_ = "Cat";
+	std::cout << "Cat constructor called!" << std::endl;
+	brain_ = new Brain;
 }
 
 Cat::~Cat() {
+	delete brain_;
+	std::cout << "Cat destructor called!" << std::endl;
 }
 
 Cat::Cat(Cat const &rhs) {
