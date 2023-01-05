@@ -15,8 +15,6 @@ public:
 
 	Dog &operator=(Dog const &rhs);
 
-	std::string getType();
-
 	virtual void makeSound() const ;
 };
 

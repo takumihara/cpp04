@@ -1,11 +1,12 @@
 #include <iostream>
 #include "WrongAnimal.hpp"
 
-WrongAnimal::WrongAnimal() {
-	type_ = "WrongAnimal";
+WrongAnimal::WrongAnimal() : type_("WrongAnimal") {
+	std::cout << "Default constructor was called to create WrongAnimal" << std::endl;
 }
 
 WrongAnimal::~WrongAnimal() {
+	std::cout << "Destructor was called to delete WrongAnimal" << std::endl;
 }
 
 WrongAnimal::WrongAnimal(WrongAnimal const &rhs) {

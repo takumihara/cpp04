@@ -9,6 +9,9 @@ int main() {
 	const Dog *dog = new Dog();
 	const Cat *cat = new Cat();
 
+	dog->makeSound();
+	cat->makeSound();
+
 	delete cat;
 	delete dog;
 }

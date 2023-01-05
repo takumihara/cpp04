@@ -13,18 +13,16 @@ Cat::~Cat() {
 }
 
 Cat::Cat(Cat const &rhs) {
+	brain_ = new Brain;
 	*this = rhs;
 }
 
 Cat &Cat::operator=(Cat const &rhs) {
 	if (this != &rhs) {
 		type_ = rhs.type_;
+		*brain_ = *rhs.brain_;
 	}
 	return *this;
-}
-
-std::string Cat::getType() {
-	return type_;
 }
 
 void Cat::makeSound() const {

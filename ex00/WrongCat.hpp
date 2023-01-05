@@ -15,8 +15,6 @@ public:
 
 	WrongCat &operator=(WrongCat const &rhs);
 
-	std::string getType();
-
 	void makeSound() const;
 
 };

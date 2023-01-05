@@ -2,10 +2,12 @@
 #include "WrongCat.hpp"
 
 WrongCat::WrongCat() {
+	std::cout << "Default constructor was called to create WrongCat" << std::endl;
 	type_ = "WrongCat";
 }
 
 WrongCat::~WrongCat() {
+	std::cout << "Destructor was called to delete WrongCat" << std::endl;
 }
 
 WrongCat::WrongCat(WrongCat const &rhs) {
@@ -17,10 +19,6 @@ WrongCat &WrongCat::operator=(WrongCat const &rhs) {
 		type_ = rhs.type_;
 	}
 	return *this;
-}
-
-std::string WrongCat::getType() {
-	return type_;
 }
 
 void WrongCat::makeSound() const {

@@ -1,11 +1,12 @@
 #include <iostream>
 #include "Animal.hpp"
 
-Animal::Animal() {
-	type_ = "Animal";
+Animal::Animal() : type_("Animal") {
+	std::cout << "Default constructor was called to create Animal" << std::endl;
 }
 
 Animal::~Animal() {
+	std::cout << "Destructor was called to delete Animal" << std::endl;
 }
 
 Animal::Animal(Animal const &rhs) {

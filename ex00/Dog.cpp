@@ -2,10 +2,12 @@
 #include "Dog.hpp"
 
 Dog::Dog() {
+	std::cout << "Default constructor was called to create Dog" << std::endl;
 	type_ = "Dog";
 }
 
 Dog::~Dog() {
+	std::cout << "Destructor was called to delete Dog" << std::endl;
 }
 
 Dog::Dog(Dog const &rhs) {
@@ -17,10 +19,6 @@ Dog &Dog::operator=(Dog const &rhs) {
 		type_ = rhs.type_;
 	}
 	return *this;
-}
-
-std::string Dog::getType() {
-	return type_;
 }
 
 void Dog::makeSound() const {
